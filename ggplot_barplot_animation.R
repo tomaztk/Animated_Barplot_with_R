@@ -1,9 +1,18 @@
-setwd("C:/Users/SI01017988/Documents/06-SQL/5-BlogPosts/32")
+##
+## Author: Tomaz Kastrun
+## Date: 12.01.2017
+## twitter: @tomaz_tsql
+## blog: http://tomaztsql.wordpress.com
+
+
+setwd("C:/DataTK")
 library(ggplot2)
 library(dplyr)
 #install.packages("debug")
 library(debug)
 
+
+# Primer
 # full graph
 d <- data.frame(val=c(2,3,4,3,4,3,4,3,2,1), year=c(2015,2016,2017,2015,2016,2015,2015,2016,2017,2015))
 ggplot(data=d, aes(x=year, y=val, fill=year)) + geom_bar(stat="identity") + guides(fill=FALSE)
